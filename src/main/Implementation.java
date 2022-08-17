@@ -5,15 +5,9 @@ import data.Manager;
 
 public class Implementation {
     public static void main(String[] args) {
-        Manager obj = new Manager();
-        obj.setName("Rohit");
-        obj.setTeamRatings(5);
-        obj.setTeamSize(5);
-        obj.setAge(20);
-        obj.setDob("20 Nov");
-        obj.setSalary(50000);
-
         Address address = new Address();
+        Manager obj = new Manager("Rohit","20 Nov",20,50000,address,5,10);
+
         address.setHouseNumber(111);
         address.setCity("Nagpur");
         address.setCountry("INDIA");
@@ -22,6 +16,7 @@ public class Implementation {
 
         obj.setAddress(address);
         obj.show();
+        System.out.println("obj.calculateIncrement() = $" + obj.calculateIncrement());
 
     }
 }

@@ -21,7 +21,7 @@ public class Employee {
         System.out.println("name = " + name);
         System.out.println("dob = " + dob);
         System.out.println("age = " + age);
-        System.out.println("salary = " + salary);
+        System.out.println("salary = $" + salary);
         address.display();
     }
 
