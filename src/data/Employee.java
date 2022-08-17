@@ -7,6 +7,14 @@ public class Employee {
     private  double salary;
     private Address address;
 
+    public Employee(String name, String dob, int age, double salary, Address address) {
+        this.name = name;
+        this.dob = dob;
+        this.age = age;
+        this.salary = salary;
+        this.address = address;
+    }
+
 
     public  void display() {
         System.out.println("Employee Details.");
